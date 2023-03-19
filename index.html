@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/homepage.css" />
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/x-icon" href="favicon.ico" />
+      <title>Cube Website Home Page</title>
+   </head>
+   <body>
+      <header class="header">
+         <a href="#" class="logo">Cube</a>
+         <div class="header__burger">
+            <span></span>
+         </div>
+         <nav class="navbar">
+            <ul class="header__list">
+               <li>
+                  <a href="index.html" class="active" style="--clr:1">Home</a>
+               </li>
+               <li>
+                  <a href="soon-page.html" style="--clr:2">About Me</a>
+               </li>
+               <li>
+                  <a href="singles.html" style="--clr:3">Singels</a>
+               </li>
+               <li>
+                  <a href="soon-page.html" style="--clr:4">Albums</a>
+               </li>
+               <li>
+                  <a href="soon-page.html" style="--clr:5">Galery</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <section class="home">
+         <div class="home-detail">
+            <h3>Hello It's Me</h3>
+            <h1>Cube</h1>
+            <h3>And I'm a <span class="textline"></span></h3>
+            <p>This is my official website. Here you can find my songs, albums, information about me, galery with my photos and much more but it wil be later. Enjoy:)</p>
+            <div class="social-media">
+               <a href="https://www.youtube.com/channel/UCs-6eI0v3gG5nscVhanRfVA" style="--clr:7"><i class='bx bxl-youtube'></i></a>
+               <a href="instagram.com/cube.160?igshid=YmMyMTA2M2Y=" style="--clr:8"><i class='bx bxl-instagram'></i></a>
+               <a href="https://www.tiktok.com/@cubikmm" style="--clr:9"><i class='bx bxl-tiktok'></i></a>
+               <a href="https://www.twitch.tv/cubik16" style="--clr:10"><i class='bx bxl-twitch'></i></a>
+               <a href="https://soundcloud.com/cube-official16" target="blank" style="--clr:11"><i class='bx bxl-soundcloud'></i></a>
+            </div>
+         </div>
+         <div class="profile-photo">
+            <img src="img/avatar.png" alt="">
+         </div>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+         var type= new Typed('.textline', {
+            strings:["Soundproducer", "Artist", "Programist", "Blogger"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+         });
+      </script>
+      <script src="js/jquery.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>

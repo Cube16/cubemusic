@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aslide {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  background: black;
+  color: #fff;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 10% 0;
+}
+
+.home .home-detail {
+  max-width: 600px;
+}
+
+.home-detail h3 {
+  font-size: 32px;
+  font-weight: 700;
+  -webkit-animation: slideBottom 1s ease forwards;
+          animation: slideBottom 1s ease forwards;
+  opacity: 0;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.home-detail h3:nth-of-type(2) {
+  margin-bottom: 30px;
+  -webkit-animation: slideTop 1s ease forwards;
+          animation: slideTop 1s ease forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  opacity: 0;
+}
+
+span {
+  color: blue;
+}
+
+.home-detail h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3px 0;
+  -webkit-animation: slideRight 1s ease forwards;
+          animation: slideRight 1s ease forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
+}
+
+.home-detail p {
+  font-size: 16px;
+  -webkit-animation: slideLeft 1s ease forwards;
+          animation: slideLeft 1s ease forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
+}
+
+.home-detail .social-media a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: blue;
+  background: transparent;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 15px 30px 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  font-size: 30px;
+  -webkit-animation: slideLeft 1s ease forwards;
+          animation: slideLeft 1s ease forwards;
+  -webkit-animation-delay: calc(0.2s * var(--clr));
+          animation-delay: calc(0.2s * var(--clr));
+  opacity: 0;
+}
+
+.social-media a:hover {
+  background-color: blue;
+  color: black;
+  -webkit-box-shadow: 0 0 20px blue;
+          box-shadow: 0 0 20px blue;
+}
+
+img {
+  width: 550px;
+  margin-right: -20px;
+  -webkit-animation: Zoom 1s ease forwards, Float 3s ease-in-out infinite;
+          animation: Zoom 1s ease forwards, Float 3s ease-in-out infinite;
+  -webkit-animation-delay: 2s, 3s;
+          animation-delay: 2s, 3s;
+  opacity: 0;
+}
