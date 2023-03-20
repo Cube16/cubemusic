@@ -148,6 +148,10 @@ img {vertical-align: top}
     color: white;
 }
 
+span {
+   display: none;
+}
+
 @media (max-width:991px) {
    .track-page {
       flex-direction: column;
