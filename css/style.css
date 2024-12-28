@@ -93,3 +93,9 @@ footer {
 	font-size: 25px;
 	color: black;
 }
+
+@media (max-width: 991px) {
+	footer {
+		margin-top: 100px;
+	}
+}

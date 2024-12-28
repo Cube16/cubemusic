@@ -42,7 +42,7 @@ body {
 
 .home {
    width: 100vw;
-   height: auto;
+   height: 100vh;
 }
 
 .fullscreen img {
@@ -81,7 +81,6 @@ body {
 }
 
 .nav_links {
-	margin-top: 20vh;
 	padding: 70px 0px 0px 0px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
