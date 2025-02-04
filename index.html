@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css" />
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="icon" type="image/x-icon" href="favicon.ico" />
+   <title>Official Cube WebSite</title>
+   
+</head>
+<body>
+   <header>
+      <a href="#">Cube</a>
+   </header>
+
+   <section>
+      <div class="background-img-container">
+         <img src="img/background.png" alt="">
+      </div>
+   </section>
+   <section class="music-container" id="releases">
+      <div class="nav-container">
+         <p class="title">Releases</p>
+         <form id="item-filter">
+            <input type="radio" name="release-category" value="All" id="All" checked="checked" onclick="filterReleases()" />
+            <label for="All">All</label>
+            <input type="radio" name="release-category" value="Single" id="Single" onclick="filterReleases()" />
+            <label for="Single">Single</label>
+            <input type="radio" name="release-category" value="Remix" id="Remix" onclick="filterReleases()" />
+            <label for="Remix">Remix</label>
+            <input type="radio" name="release-category" value="Album" id="Album" onclick="filterReleases()" />
+            <label for="Album">Album</label>
+         </form>
+      </div>
+      <div class="music-cards-container">
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/We-Own-The-Flame-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">We Own The Flame</p>
+            </div>
+            <a href="we-own-the-flame.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Cold-Winter-Night-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">Cold Winter Night</p>
+            </div>
+            <a href="cold-winter-night.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Reflections-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">Reflection</p>
+            </div>
+            <a href="reflections.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Unity-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">Unity</p>
+            </div>
+            <a href="unity.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Remix">
+            <img src="img/Outside-Cube-Remix.png" alt="">
+            <div class="music-title">
+               <p class="artist">Cube, Calvin Harris, Ellie Goulding</p>
+               <p class="title">Outside (Cube Remix)</p>
+            </div>
+            <a href="outside-remix.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Eternal-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">Eternal</p>
+            </div>
+            <a href="eternal.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Triumphant-Cube-x-Alternative.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube, Alternative</p>
+               <p class="title">Triumphant</p>
+            </div>
+            <a href="triumphant.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Wavez-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">Wavez</p>
+            </div>
+            <a href="wavez.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Remix">
+            <img src="img/Head-Down-Cube-Remix-Merks-Edit.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube, DJ Merks, Lost Frequencies, Bastille</p>
+               <p class="title">Head Down (Cube Remix - DJ Merks Edit)</p>
+            </div>
+            <a href="head-down-edit.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Interstellar-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">Interstellar</p>
+            </div>
+            <a href="interstellar.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Remix">
+            <img src="img/Head-Down-Cube-Remix.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube, Lost Frequencies, Bastille</p>
+               <p class="title">Head Down (Cube Remix)</p>
+            </div>
+            <a href="head-down-remix.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Demons-Cube-x-Alternative.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube, Alternative</p>
+               <p class="title">Demons</p>
+            </div>
+            <a href="demons.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Spooky-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">Spooky</p>
+            </div>
+            <a href="spooky.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Moment-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">Moment</p>
+            </div>
+            <a href="moment.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Candy-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">Candy</p>
+            </div>
+            <a href="candy.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Chill-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">Chill</p>
+            </div>
+            <a href="chill.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/About-U-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">About U</p>
+            </div>
+            <a href="about-u.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Remix">
+            <img src="img/Como-Yo-Cube-Flip.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube, Marshmello, Tiago PZK</p>
+               <p class="title">Como Yo (Cube Remix)</p>
+            </div>
+            <a href="como-yo.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Vibrate-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">Vibrate</p>
+            </div>
+            <a href="vibrate.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Paradise-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">Paradise</p>
+            </div>
+            <a href="paradise.html" class="listen-now-btn">Listen now</a>
+         </div>
+         <div class="music-card release-item" name="release-item" data-category="All Single">
+            <img src="img/Summer-Cube.jpg" alt="">
+            <div class="music-title">
+               <p class="artist">Cube</p>
+               <p class="title">Summer</p>
+            </div>
+            <a href="summer.html" class="listen-now-btn">Listen now</a>
+         </div>
+      </div>
+   </section>
+   <footer>
+      <div class="footer-social-links">
+         <a href="https://open.spotify.com/artist/5LdNL59lTzqZrc2qI9ss0C" target="_blank"><i class='bx bxl-spotify'></i></a>
+         <a href="https://www.youtube.com/@cubik16/" target="_blank"><i class='bx bxl-youtube'></i></a>
+         <a href="https://www.instagram.com/cube.160/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+         <a href="https://soundcloud.com/alternative-mm" target="_blank"><i class='bx bxl-soundcloud'></i></a>
+         <a href="https://www.tiktok.com/@cubikmm" target="_blank"><i class='bx bxl-twitch'></i></a>
+         <a href="https://soundcloud.com/cube-official16" target="_blank"><i class='bx bxl-tiktok'></i></a>
+      </div>
+      <div class="footer-info">
+         <p>© 2025 Cube</p>
+      </div>
+   </footer>
+   <script src="js/script.js"></script>
+</body>
+</html>
