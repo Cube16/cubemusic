@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+@font-face {
+	font-family: 'Kallisto';
+	src: url('../fonts/kallisto_thin-webfont.eot');
+	src: url('../fonts/kallisto_thin-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/kallisto_thin-webfont.woff2') format('woff2'),
+		url('../fonts/kallisto_thin-webfont.woff') format('woff'),
+		url('../fonts/kallisto_thin-webfont.ttf') format('truetype'),
+		url('../fonts/kallisto_thin-webfont.svg#Tilt Warp') format('svg');
+}
+
+
+
+
+@font-face {
+	font-family: 'KallistoMedium';
+	src: url('../fonts/kallisto_medium-webfont.eot');
+		src: url('../fonts/kallisto_medium-webfont.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/kallisto_medium-webfont.woff2') format('woff2'),
+			url('../fonts/kallisto_medium-webfont.woff') format('woff'),
+			url('../fonts/kallisto_medium-webfont.ttf') format('truetype'),
+			url('../fonts/kallisto_medium-webfont.svg#Tilt Warp') format('svg');
+	font-weight: 500;
+	font-style: normal;
+
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active {outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header, aslide{display: block;}
+
+html,body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea {font-family: inherit;}
+
+input::-ms-clear {display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top}
+
+body {
+	background: rgb(22, 25, 28);
+}
+
+header {
+	background: black;
+	text-align: center;
+	width: 100vw;
+	font-size: 40px;
+	font-family: "Anton", serif;
+	font-weight: 400;
+	font-style: normal;
+	padding: 5px 0;
+	position: sticky !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1030;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+}
+
+section {
+	width: 100vw;
+}
+
+.background-img-container {
+	width: 100vw;
+	height: auto;
+}
+
+.background-img-container img {
+	width: 100%;
+	height: auto;
+}
+
+footer {
+	background: rgb(0, 0, 0);
+	width: 100vw;
+	height: 100px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: static !important;
+}
+
+.footer-info {
+	color: gray;
+	font-family: "Anton", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-social-links {
+	display: flex;
+	align-self: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-social-links a {
+	display: inline-flex;
+	padding: 8px;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	margin: 4px 4px;
+	transition: .5s;
+}
+
+.music-container {
+	width: 100vw;
+	height: auto;
+	padding: 50px 10vw;
+}
+
+.nav-container {
+	color: white;
+	font-family: "Anton", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.nav-container p, #item-filter {
+	margin: 10px 0;
+}
+
+.nav-container .title {
+	font-family: "Kallisto";
+	display: block;
+   font-size: 1.5em;
+	letter-spacing: 0.075em;
+   margin-block-start: 0.83em;
+   margin-block-end: 0.83em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   font-weight: bold;
+   unicode-bidi: isolate;
+}
+
+#item-filter {
+	padding: 20px 0 0;
+	margin-bottom: 50px;
+}
+
+#item-filter label {
+	background: rgb(37, 44, 47);
+	padding: 14px 22px 10px !important;
+	border-radius: 3px;
+	font-family: "Kallisto";
+	font-size: 1.1em;
+	letter-spacing: 0.075em;
+	font-weight: bold;
+	color: white;
+}
+
+#item-filter::-webkit-scrollbar {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+@media screen and (max-width: 600px) {
+	#item-filter {
+		width: 100vw;
+		position: relative;
+		left: -20px;
+		right: 20px;
+		padding: 0 20px !important;
+		margin-bottom: 30px;
+		overflow-x: scroll;
+		scroll-behavior: smooth;
+	}
+}
+
+#item-filter input[type="radio"] {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+#item-filter input[type="radio"]+label {
+	background-color: rgba(36, 44, 47, 0.7);
+	border-radius: 3px;
+	font-family: "Kallisto", sans-serif;
+	font-size: 1.1rem;
+	outline: none;
+	padding: 14px 22px 10px !important;
+	-webkit-transition: .1s ease background-color;
+	transition: .1s ease background-color;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+	#item-filter input[type="radio"]+label {
+		font-size: 16px;
+	}
+}
+
+#item-filter input[type="radio"]+label+input {
+	margin-left: 10px;
+}
+
+#item-filter input[type="radio"]:checked+label {
+	background-color: black !important;
+}
+
+.single-btn, .remix-btn, .album-btn {
+	margin-left: 10px;
+}
+
+.active {
+	background: black !important;
+}
+
+.music-cards-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-flow: row;
+	gap: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+	.music-cards-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.music-cards-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.music-cards-container {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 30px;
+	}
+}
+
+.music-card {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.music-card img {
+	width: 100%;
+	border-radius: 3px;
+}
+
+.artist {
+	color: white;
+	font-family: "Anton", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 20px;
+}
+
+.music-title .title {
+	color: white;
+	font-family: "Anton", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 8px 0 20px 0;
+}
+
+.listen-now-btn {
+	color: black;
+	font-family: "KallistoMedium", sans-serif;
+	font-weight: 900;
+	font-size: 14px;
+	letter-spacing: 0.075em;
+	padding: 16px 28px;
+	border-radius: 3px;
+	background: rgb(0, 89, 255);
+	transition: .3s ease all;
+}
+
+.listen-now-btn:hover {
+	color: rgb(0, 89, 255);
+	background: black;
+}
+
+.hide {
+	display: none;
+}
