@@ -1,6 +1,6 @@
 function filterReleases() {
 		const selectedCategory = document.querySelector('input[name="release-category"]:checked').value;
-		const musicCards = document.querySelectorAll('.music-card');
+		const musicCards = document.querySelectorAll('.release-item');
 
 		musicCards.forEach(card => {
 			const categories = card.getAttribute('data-category').split(' ');
