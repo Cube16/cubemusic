@@ -273,6 +273,10 @@ footer {
 	.music-cards-container {
 		grid-template-columns: repeat(1, 1fr);
 		gap: 30px;
+		padding: 0 10vw;
+	}
+	.music-container {
+		padding: 50px 0;
 	}
 }
 
